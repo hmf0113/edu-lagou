@@ -1,0 +1,11 @@
+# Project exclude paths
+/edu-ad-boot/target/
+/edu-api/target/
+/edu-authority-boot/target/
+/edu-comment-boot/target/
+/edu-course-boot/target/
+/edu-gateway-boot/target/
+/edu-nacos-boot/target/
+/edu-order-boot/target/
+/edu-pay-boot/target/
+/edu-user-boot/target/
