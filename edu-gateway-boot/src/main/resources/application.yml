@@ -1,0 +1,18 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: edu-gateway-boot
+  cloud:
+    nacos: #nacos配置信息
+      discovery:
+        server-addr: 192.168.200.128:8848
+    gateway: #配置网关信息
+      routes: #配置路由
+        - id: edu-ad-router #配置注册中心的名字
+          uri: lb://edu-ad-boot #配置需要网关的uri地址
+          predicates: #谓词用来匹配请求的条件
+            - Path=/ad/** #断言，意思就是访问http://127.0.0.1:9000这个端口号指定访问，并且要包含断言地址才能进行访问
+          filters: #增加过滤,为了避免断言访问重复数据导致其他接口无法访问，可以进行过滤
+             #http://127.0.0.1:9300/product/service/port  /service/port
+            - StripPrefix=1 #配置就是把上面的断言product过滤掉变成相当于裁剪

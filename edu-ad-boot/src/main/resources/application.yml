@@ -1,0 +1,14 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: edu-ad-boot
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.200.128:3306/edu_ad?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: root
+  cloud:
+    nacos:
+      discovery: #服务注册到哪个nacos的连接
+        server-addr: 192.168.200.128:8848
