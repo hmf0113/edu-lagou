@@ -4,36 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="612621e6-e2e7-4c5f-9d5a-7f9f79c48390" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/free-mybatis-generator-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-ad-boot/src/main/java/com/lagou/eduadboot/EduAdBootApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-ad-boot/src/main/java/com/lagou/eduadboot/controller/AdController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-ad-boot/src/main/java/com/lagou/eduadboot/entity/PromotionAd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-ad-boot/src/main/java/com/lagou/eduadboot/mapper/AdDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-ad-boot/src/main/java/com/lagou/eduadboot/service/AdService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-ad-boot/src/main/java/com/lagou/eduadboot/service/impl/AdServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-ad-boot/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-authority-boot/src/main/java/com/lagou/authorityboot/AuthorityApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-authority-boot/src/main/java/com/lagou/authorityboot/entity/EduConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-authority-boot/src/main/java/com/lagou/authorityboot/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-authority-boot/src/main/java/com/lagou/authorityboot/entity/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-authority-boot/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-gateway-boot/src/main/java/com/lagou/gatewayboot/GateWayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-gateway-boot/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+    <list default="true" id="612621e6-e2e7-4c5f-9d5a-7f9f79c48390" name="Changes" comment="2023/8/18代码">
+      <change afterPath="$PROJECT_DIR$/edu-authority-boot/src/main/java/com/lagou/authorityboot/controller/AuthorityController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-authority-boot/src/main/java/com/lagou/authorityboot/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-authority-boot/src/main/java/com/lagou/authorityboot/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-authority-boot/src/main/java/com/lagou/authorityboot/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-authority-boot/src/main/java/com/lagou/authorityboot/tool/JwtUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad-boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad-boot/src/main/java/com/lagou/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-authority-boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-authority-boot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-authority-boot/src/main/java/com/lagou/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-gateway-boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-gateway-boot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-gateway-boot/src/main/java/com/lagou/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-authority-boot/src/main/java/com/lagou/authorityboot/AuthorityApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-authority-boot/src/main/java/com/lagou/authorityboot/AuthorityApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-authority-boot/src/main/java/com/lagou/authorityboot/entity/EduConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-authority-boot/src/main/java/com/lagou/authorityboot/entity/EduConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-authority-boot/src/main/java/com/lagou/authorityboot/entity/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-authority-boot/src/main/java/com/lagou/authorityboot/entity/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-authority-boot/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-authority-boot/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-gateway-boot/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-gateway-boot/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +66,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "11",
     "last_opened_file_path": "D:/edu/edu-lagou/pom.xml",
@@ -104,6 +87,9 @@
     ]
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -111,7 +97,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GateWayApplication">
+  <component name="RunManager" selected="Spring Boot.AuthorityApplication">
     <configuration name="AuthorityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="edu-authority-boot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.lagou.authorityboot.AuthorityApplication" />
@@ -162,12 +148,48 @@
       <updated>1692179636513</updated>
       <workItem from="1692179637643" duration="733000" />
       <workItem from="1692195032534" duration="17130000" />
-      <workItem from="1692283067136" duration="1419000" />
+      <workItem from="1692283067136" duration="13398000" />
     </task>
+    <task id="LOCAL-00001" summary="2023/8/18代码">
+      <created>1692290264614</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1692290264614</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2023/8/18代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023/8/18代码" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/edu-authority-boot/src/main/java/com/lagou/authorityboot/controller/AuthorityController.java</url>
+          <line>19</line>
+          <properties class="com.lagou.authorityboot.controller.AuthorityController" method="login">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/edu-authority-boot/src/main/java/com/lagou/authorityboot/service/impl/UserServiceImpl.java</url>
+          <line>22</line>
+          <properties class="com.lagou.authorityboot.service.impl.UserServiceImpl" method="login">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

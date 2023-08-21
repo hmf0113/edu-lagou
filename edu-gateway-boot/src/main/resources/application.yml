@@ -16,3 +16,10 @@ spring:
           filters: #增加过滤,为了避免断言访问重复数据导致其他接口无法访问，可以进行过滤
              #http://127.0.0.1:9300/product/service/port  /service/port
             - StripPrefix=1 #配置就是把上面的断言product过滤掉变成相当于裁剪
+        - id: edu-authority-route
+          uri:
+            lb://edu-authority-boot
+          predicates:
+            - Path=/user/**
+          filters:
+            - StripPrefix=1

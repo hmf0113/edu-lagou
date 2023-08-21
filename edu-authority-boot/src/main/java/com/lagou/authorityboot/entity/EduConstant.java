@@ -8,7 +8,10 @@ package com.lagou.authorityboot.entity;
  */
 public class EduConstant {
 
-    // 状态码
+    /**
+     *  状态码
+     */
+
     public static Integer ERROR_NOT_FOUND_PHONE_CODE = 1;
     public static Integer ERROR_PASSWORD_CODE = 2;
     public static Integer LOGIN_SUCCESS_CODE = 3;

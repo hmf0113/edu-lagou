@@ -1,4 +1,4 @@
-package com.lagou.eduauthorityboot.entity;
+package com.lagou.authorityboot.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

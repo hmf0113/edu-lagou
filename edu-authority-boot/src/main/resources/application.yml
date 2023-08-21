@@ -1,0 +1,18 @@
+server:
+  port: 8003
+spring:
+  application:
+    name: edu-authority-boot
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.200.128:3306/edu_user?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: root
+  cloud:
+    nacos: #nacos配置
+      discovery:
+        server-addr: 192.168.200.128:8848
+  redis:
+    host: 192.168.200.128
+    port: 6379
+    password: root
