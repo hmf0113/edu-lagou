@@ -18,7 +18,7 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserMapper userMapper;
     @Autowired
-    private RedisTemplate redisTemplate;
+    private RedisTemplate<Object,Object> redisTemplate;
     @Override
     public UserDTO login(String phone, String password) {
         UserDTO<Object> dto = new UserDTO<>();
@@ -57,6 +57,30 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDTO checkToken(String token) {
-        return null;
+        UserDTO dto = new UserDTO();
+        int i = JwtUtil.isVerify(token);
+        if(i == 0){
+            dto.setState(EduConstant.TOKEN_SUCCESS_CODE);
+            dto.setMessage(EduConstant.TOKEN_SUCCESS);
+            // 校验通过，重新设置redis的生命周期
+            redisTemplate.opsForValue().set(token,token,600, TimeUnit.SECONDS);
+        }else if(i == 1){
+            dto.setState(EduConstant.TOKEN_TIMEOUT_CDOE);
+            dto.setMessage(EduConstant.TOKEN_TIMEOUT);
+        }else if(i == 2){
+            dto.setState(EduConstant.TOKEN_NULL_CODE);
+            dto.setMessage(EduConstant.TOKEN_ERROR1);
+        }else{
+            dto.setState(EduConstant.TOKEN_ERROR_CDOE);
+            dto.setMessage(EduConstant.TOKEN_ERROR2);
+        }
+
+        return dto;
+
+    }
+    private <T> UserDTO<T> setErrorResponse(UserDTO<T> dto,int state,String message){
+        dto.setState(state);
+        dto.setMessage(message);
+        return dto;
     }
 }
